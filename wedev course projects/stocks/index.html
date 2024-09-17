@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Share Price</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Tesla Stock Market Dashboard</h1>
+
+        <button type="button" class="btn btn-primary mb-4" onclick="fetch_data()">Fetch Data</button>
+        <div class="card" id="datecard">
+            <div class="card-body" id="cdate">
+                <h3>Date : </h3>
+            </div>
+        </div>
+        <div class="row mt-2" id="share_price">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body" id="share_max">
+                        <h3>Max : </h3>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body" id="share_min">
+                        <h3>Min : </h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="curve_chart" style="width: 900px; height: 500px; margin-left: auto; margin-right: auto;"></div>
+
+    </div>
+    <script>
+        document.getElementById('datecard').style.visibility = 'hidden'
+        document.getElementById('share_price').style.visibility = 'hidden'
+
+    </script>
+    <script src="app.js"></script>
+    
+    
+</body>
+</html>

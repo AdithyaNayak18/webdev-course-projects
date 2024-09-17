@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../JS projects(calc)/todo"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "stopwatch"
+	}
+}
